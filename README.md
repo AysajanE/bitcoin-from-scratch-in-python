@@ -4,10 +4,10 @@ Reference: http://karpathy.github.io/2021/06/21/blockchain/
 
 Andrej Karpathy GitHub Repository: https://github.com/karpathy/cryptos
 
-In this notebook, I will explore Bitcoin protocol from scratch by re-doing Andrej Karpathy's Bitcoin implementation from 2021 June. NOTE that this is Andrej Karpathy's intellectual work. I am merely re-implementing his implementation, with the goal of deepen my own understanding of Bitcoin's technical background. This is neither fork nor copy-paste. I wrote this entire notebook word by word.
+In this notebook, I will explore Bitcoin protocol from scratch by re-doing Andrej Karpathy's Bitcoin implementation from 2021 June. NOTE that this is Andrej Karpathy's intellectual work. I am merely re-implementing his implementation, with the goal of deepening my own understanding of Bitcoin's technical background. This is neither fork nor copy-paste. I wrote this entire notebook word by word.
 
-Bitcoin was proposed in the white paper "Bitcoin: A Peer-to-Peer Electronic Cash System" 
-(can be found here: https://bitcoin.org/bitcoin.pdf) in October 2008 by Satoshi Nakamoto, whom to date we still don't know much about.
+Bitcoin was proposed in October 2008 via the white paper "Bitcoin: A Peer-to-Peer Electronic Cash System" 
+(can be found here: https://bitcoin.org/bitcoin.pdf) by Satoshi Nakamoto, whom to date we still don't know much about.
 
 It has been quite some time that I want to know more about Bitcoin, from both a technoplogy perspective and monetary policy perspective. And of course, I want to invest in BTC, so I need to know what I am putting my money into.
 Luckily sometime last year I discovered this excellent blog post by Andrej Karpathy about implementing Bitcoin from scratch in Python without using any custom dependencies for Bitcoin. 
