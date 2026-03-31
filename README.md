@@ -1,31 +1,54 @@
 # Bitcoin from Scratch in Python
 
-Reference: http://karpathy.github.io/2021/06/21/blockchain/
+A study-oriented reconstruction of core Bitcoin mechanics in Python.
 
-Andrej Karpathy GitHub Repository: https://github.com/karpathy/cryptos
+This repository documents my effort to understand Bitcoin by re-implementing and working through the ideas in Andrej Karpathy's "Bitcoin in Python from Scratch" material, then extending that exercise with my own notes, supporting analysis, and testnet experimentation. The point of this repo is not to present a new Bitcoin library. The point is to demonstrate hands-on protocol literacy.
 
-In this notebook, I will explore Bitcoin protocol from scratch by re-doing Andrej Karpathy's Bitcoin implementation from 2021 June. NOTE that this is Andrej Karpathy's intellectual work. I am merely re-implementing his implementation, with the goal of deepening my own understanding of Bitcoin's technical background. This is neither fork nor copy-paste. I wrote this entire notebook word by word.
+## Why this repo exists
 
-Bitcoin was proposed in October 2008 via the white paper "Bitcoin: A Peer-to-Peer Electronic Cash System" 
-(can be found here: https://bitcoin.org/bitcoin.pdf) by Satoshi Nakamoto, whom to date we still don't know much about.
+- Learn Bitcoin at the code level rather than only from high-level summaries.
+- Connect blockchain interest with practical understanding of transactions, signatures, scripts, and testnet execution.
+- Produce a notebook that is readable for people coming from economics, management science, or data backgrounds.
 
-It has been quite some time that I want to know more about Bitcoin, from both a technoplogy perspective and monetary policy perspective. And of course, I want to invest in BTC, so I need to know what I am putting my money into.
-Luckily sometime last year I discovered this excellent blog post by Andrej Karpathy about implementing Bitcoin from scratch in Python without using any custom bitcoin dependencies. 
-There is no better way of learning something new than doing it, experimenting it yourself. So I decided to re-do what Andrej did once I had time.
+## What is in the repo
 
-Finally, it is time for this exploration. 
+- `bitcoin-in-python.ipynb`: the main walkthrough notebook for reconstructing Bitcoin transaction and wallet mechanics in Python.
+- `bitcoin-statistics.ipynb`: supplementary exploration of Bitcoin market and network data.
+- `*.csv`, `*.json`, `*.png`: supporting datasets and plots used in the notebooks.
 
-In this notebook, I re-do what Andrej did line by line. There is no copy-paste, only typing line by line and understanding what those
-lines of codes do and why. At the end, I also broadcast my transactions to the Bitcoin testnet to see if they work properly (and they did). 
-I tried to do the bonus exercise at the end (steal all of Andrej's BTC from one of his testnet wallets) but having issues with signatures, 
-even though I believe I did everything correct. I will play around with it a little bit more.
+## Scope and attribution
 
-Note that many of the words in the notebook are also his. So all the credit goes to Andrej Karpathy. He did such an excellent work and shared with everyone over the Internet.
-Additionally, I added explanations for some of the context that I was not familiar with. My goal is to make it more accessible to anyone who do not have strong technological beckground. 
+This repository is inspired by:
 
-This entire process was extremely beneficial and valuable. If you want to know what's under the hood of Bitcoin, this notebook can be an excellent place to start. 
+- Andrej Karpathy's blog post: http://karpathy.github.io/2021/06/21/blockchain/
+- Andrej Karpathy's reference repo: https://github.com/karpathy/cryptos
 
-Enjoy!!
+The underlying learning path and many of the concepts originate there. This repo is a personal reconstruction and study artifact, not a claim of authorship over the original teaching material. I wrote the notebook work myself as a way to internalize the implementation details and added context where helpful.
 
+## What the work covers
+
+- Bitcoin transaction structure
+- Keys, signatures, and script validation
+- UTXO-style reasoning
+- End-to-end testnet transaction work
+- Supporting descriptive analysis of Bitcoin data
+
+## Running the notebooks
+
+Open the notebooks in Jupyter and work through them in order:
+
+```bash
+jupyter notebook
+```
+
+Recommended starting point:
+
+1. `bitcoin-in-python.ipynb`
+2. `bitcoin-statistics.ipynb`
+
+## References
+
+- Satoshi Nakamoto, *Bitcoin: A Peer-to-Peer Electronic Cash System*: https://bitcoin.org/bitcoin.pdf
+- Andrej Karpathy, *Bitcoin in Python from Scratch*: http://karpathy.github.io/2021/06/21/blockchain/
 
 
